@@ -67,21 +67,21 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |    1    |    2    |    3    |  4  |  5  |   |  7  |  8  |  9  |  0  | prtscr| BKSP |
-// | BTCLR|   BT1   |   BT2   |   BT3   | BT4 | BT5 |   |  4  |  5  |  6  |     |  UP   |      |
-// | SHFT | RGB_TOG | RGB_BRD | RGB_BRI |     |     |   |  1  |  2  |  3  | LFT | DWN   |  RGT |
+// |  ESC |    1    |    2    |    3    |  4  |  5  |   |  7  |  8  |  9  |  0    |     | BKSP |
+// | BTCLR|   BT1   |   BT2   |   BT3   | BT4 | BT5 |   |  4  |  5  |  6  |  HOME | UP  | END  |
+// | SHFT | RGB_TOG | RGB_BRD | RGB_BRI |     |     |   |  1  |  2  |  3  |  LFT  | DWN | RGT  |
 //                                | GUI |     | RALT|   | ENT |     | ALT |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                 &kp N7   &kp N8    &kp N9  &kp N0    &kp PSCRN  &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4           &kp N4   &kp N5   &kp N6    &trans   &kp UP     &trans
+   &kp ESC    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                 &kp N7   &kp N8    &kp N9  &kp N0    &trans  &kp BSPC
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4           &kp N4   &kp N5   &kp N6    &kp HOME   &kp UP     &kp END
    &kp LSHFT &rgb_ug RGB_TOG &rgb_ug RGB_BRD &rgb_ug RGB_BRI &trans &trans               &kp N1   &kp N2   &kp N3    &kp LEFT &kp DOWN   &kp RIGHT
-                          	        &kp LGUI     &trans       &trans                   &kp RET  &trans   &kp RALT
+                          	        &kp LGUI     &trans       &trans                   &kp RET  &trans   &kp PSCRN
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL |
+// | ESC  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL |
 // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
