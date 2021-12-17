@@ -72,10 +72,10 @@
 // | SHFT | RGB_TOG | RGB_BRD | RGB_BRI |     |     |   |  1  |  2  |  3  |  LFT  | DWN | RGT  |
 //                                | GUI |     | RALT|   | ENT |     | ALT |
                         bindings = <
-   &kp ESC    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                 &kp N7   &kp N8    &kp N9  &kp N0    &trans  &kp BSPC
+   &kp ESC    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                 &kp N7   &kp N8    &kp N9  &kp PSCRN    &trans  &kp BSPC
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4           &kp N4   &kp N5   &kp N6    &kp HOME   &kp UP     &kp END
    &kp LSHFT &rgb_ug RGB_TOG &rgb_ug RGB_BRD &rgb_ug RGB_BRI &trans &trans               &kp N1   &kp N2   &kp N3    &kp LEFT &kp DOWN   &kp RIGHT
-                          	        &kp LGUI     &trans       &trans                   &kp RET  &trans   &kp PSCRN
+                          	        &kp LGUI     &trans       &trans                   &kp RET  &N0   &kp DOT
                         >;
                 };
 
